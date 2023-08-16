@@ -9,6 +9,7 @@ pub enum Error {
     Json(#[from] serde_json::Error)
 }
 
-fn main() -> Result<()>{
+#[tokio::main]
+async fn main() -> Result<()>{
     Ok(())
 }
